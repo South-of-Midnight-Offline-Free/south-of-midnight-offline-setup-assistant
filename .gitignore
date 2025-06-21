@@ -1,0 +1,360 @@
+# 🔒 Security & Credentials
+.internal/GITHUB_CREDENTIALS.md
+.internal/
+*.credentials
+*.secrets
+*.key
+*.pem
+*config.local.*
+.env
+.env.local
+.env.*.local
+
+# 💻 Development Tools
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 🏗️ Build Outputs
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+build/
+dist/
+out/
+
+# 📦 Package Management
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+packages/
+*.tgz
+*.tar.gz
+
+# 🎮 Game Files & Testing
+SouthOfMidnight/
+game-install/
+test-games/
+*.save
+*.dat
+*.cache
+GameData/
+
+# 🖼️ Media & Assets
+*.tmp
+*.temp
+temp/
+tmp/
+screenshots/
+recordings/
+
+# 📊 Logs & Debugging
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+.nyc_output
+coverage/
+*.lcov
+crashdump-*
+
+# 🗃️ Databases & Data
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+data/
+database/
+
+# 🌐 Web & HTTP
+.cache/
+.next/
+.nuxt/
+public/uploads/
+static/uploads/
+
+# 📱 Mobile Development
+*.ipa
+*.apk
+*.aab
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# 🐳 Docker & Containers
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# ☁️ Cloud & Deployment
+.vercel
+.netlify
+.firebase/
+.aws/
+terraform.tfstate*
+*.tfplan
+
+# 🧪 Testing
+TestResults/
+test-results/
+coverage.xml
+*.coverage
+*.coveragexml
+.pytest_cache/
+.hypothesis/
+
+# 📏 Code Analysis
+.sonarqube/
+.scannerwork/
+*.sarif
+
+# 🔧 Configuration Backups
+*.bak
+*.backup
+*.old
+*.orig
+backup/
+backups/
+
+# 💾 Operating System Files
+
+## Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+## Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# 🎨 Design & Graphics
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xd
+*.afdesign
+*.afphoto
+
+# 📖 Documentation Builds
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+mkdocs-site/
+
+# 🌍 Internationalization
+*.pot
+*.mo
+translations/*.json
+!translations/template.json
+
+# 🔍 Search Indices
+.elasticsearchrc
+*.idx
+
+# 🏷️ Version Control
+.hg/
+.svn/
+CVS/
+.bzr/
+.fossil-settings
+
+# 🎯 IDE Specific
+
+## JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+## Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.externalToolBuilders/
+*.launch
+.pydevproject
+.cproject
+.autotools
+.factorypath
+.buildpath
+.target
+
+## NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+## Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# 🚀 Deployment
+.deployment
+deploy.sh
+deploy.bat
+*.deploy
+
+# 📊 Analytics & Monitoring
+.nyc_output
+coverage/
+*.lcov
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# 🔄 Continuous Integration
+.travis.yml.backup
+.appveyor.yml.backup
+circle.yml.backup
+.github/workflows/*.backup
+
+# 🎮 Gaming Specific
+UserSettings/
+GameSettings/
+SaveGames/
+LocalSettings/
+PlayerProfiles/
+GameCache/
+ShaderCache/
+Logs/GameLogs/
+CrashReports/
+Screenshots/
+Videos/
+Replays/
+
+# 🛠️ Development Specific
+tools/temp/
+scripts/temp/
+utilities/cache/
+dev-tools/output/
+
+# 📋 Project Management
+.projectile
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.metadata/
+
+# 🔐 Certificates & Keys
+*.p12
+*.p8
+*.mobileprovision
+*.certSigningRequest
+
+# 🌐 Web Certificates
+*.crt
+*.cer
+*.der
+*.pfx
+
+# 📱 App Store
+AuthKey_*.p8
+*.mobileprovision
+
+# 🎯 Custom Project Exclusions
+# Add any project-specific files or folders here
+config/local.json
+assets/private/
+internal-docs/
+dev-notes/
+personal/
+
+# ⚡ Performance & Optimization
+*.trace
+*.heap
+*.prof
+*.cpuprofile
+
+# 🔍 Search & Indexing
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.history/
+
+# 🎮 Game Development Specific
+*.unitypackage
+*.unityproj
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+MemoryCaptures/
+UserSettings/
+
+# End of .gitignore 

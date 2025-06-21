@@ -1,0 +1,275 @@
+# Jekyll configuration for South of Midnight Offline Setup Assistant Documentation
+
+# Site settings
+title: "South of Midnight Offline Setup Assistant"
+description: "Experience the mystical world of South of Midnight completely offline with full customization and accessibility features"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://south-of-midnight-offline-free.github.io/south-of-midnight-offline-setup-assistant" # the base hostname & protocol for your site
+
+# Repository information
+repository: "South-of-Midnight-Offline-Free/south-of-midnight-offline-setup-assistant"
+github_username: "South-of-Midnight-Offline-Free"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+
+# Theme settings
+minima:
+  skin: dark
+  social_links:
+    github: South-of-Midnight-Offline-Free
+    discord: https://discord.gg/southofmidnight
+
+# SEO settings
+author:
+  name: "South of Midnight Offline Free Community"
+  email: "support@southofmidnight-offline.com"
+
+social:
+  name: "South of Midnight Offline Setup Assistant"
+  links:
+    - https://github.com/South-of-Midnight-Offline-Free/south-of-midnight-offline-setup-assistant
+    - https://discord.gg/southofmidnight
+
+# Navigation
+header_pages:
+  - installation.md
+  - user-guide.md
+  - troubleshooting.md
+  - faq.md
+  - contributing.md
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "South of Midnight Offline Community"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "tutorial"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
+  - .github/
+  - README.md
+
+# Include files
+include:
+  - _pages
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+# Sass settings
+sass:
+  style: compressed
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Comments (disabled)
+disqus:
+  shortname: ""
+
+# Google Analytics (disabled for privacy)
+google_analytics: ""
+
+# Custom variables
+gaming_keywords: "south of midnight offline, south of midnight launcher, south of midnight setup assistant, compulsion games offline, south of midnight no login, adventure game offline, story-driven game offline, unreal engine game tool, xbox game pass offline, single-player game assistant"
+
+technical_keywords: "game configuration tool, offline game launcher, display settings utility, controller setup wizard, graphics optimization tool, game performance tweaker, gaming assistant software"
+
+# Footer information
+footer_text: "🌒 South of Midnight Offline Setup Assistant - Experience the magic completely offline, fully customizable, infinitely yours"
+
+# Site verification (for search engines)
+google_site_verification: ""
+bing_site_verification: ""
+
+# Social sharing
+twitter:
+  username: ""
+  card: summary_large_image
+
+# Open Graph
+og_image: "/assets/images/south-of-midnight-banner.png"
+
+# Liquid settings
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
+# Timezone
+timezone: America/New_York
+
+# Future posts
+future: false
+
+# Drafts
+show_drafts: false
+
+# Safe mode
+safe: true
+
+# Incremental build
+incremental: false
+
+# Plugins configuration
+jekyll-sitemap:
+  priority: 0.8
+  changefreq: weekly
+  lastmod: 2024-12-27
+
+# Feed settings
+feed:
+  posts_limit: 20
+  excerpt_only: false
+
+# SEO optimization
+seo:
+  type: WebSite
+  name: "South of Midnight Offline Setup Assistant"
+  headline: "Experience South of Midnight Completely Offline"
+  description: "The ultimate tool for playing South of Midnight offline with full customization, controller support, and accessibility features. No Steam or Xbox login required."
+  url: "https://south-of-midnight-offline-free.github.io/south-of-midnight-offline-setup-assistant"
+  logo: "/assets/images/logo.png"
+  image: "/assets/images/south-of-midnight-banner.png"
+  author:
+    "@type": Organization
+    name: "South of Midnight Offline Free Community"
+    url: "https://github.com/South-of-Midnight-Offline-Free"
+  publisher:
+    "@type": Organization
+    name: "South of Midnight Offline Free Community"
+    logo:
+      "@type": ImageObject
+      url: "/assets/images/logo.png"
+  datePublished: "2024-08-01"
+  dateModified: "2024-12-27"
+  mainEntityOfPage:
+    "@type": WebPage
+    "@id": "https://south-of-midnight-offline-free.github.io/south-of-midnight-offline-setup-assistant"
+
+# Custom CSS
+custom_css:
+  - "/assets/css/gaming-theme.css"
+  - "/assets/css/accessibility.css"
+
+# Custom JavaScript
+custom_js:
+  - "/assets/js/gaming-features.js"
+  - "/assets/js/accessibility.js"
+
+# Language and locale
+lang: en-US
+locale: en_US
+
+# Breadcrumbs
+breadcrumbs: true
+
+# Search functionality
+search_enabled: true
+search_tokenizer_separator: /[\s\-/]+/
+
+# Table of contents
+toc:
+  min_level: 2
+  max_level: 4
+  ordered_list: false
+  no_toc_section_class: no_toc
+  list_id: toc
+  list_class: section-nav
+  sublist_class: ''
+  item_class: toc-entry
+  item_prefix: toc-
+
+# Gaming-specific configurations
+gaming:
+  supported_platforms:
+    - Windows 10
+    - Windows 11
+  supported_controllers:
+    - Xbox One Controller
+    - Xbox Series X/S Controller
+    - PlayStation 4 Controller
+    - PlayStation 5 DualSense
+    - Generic HID Controllers
+  supported_resolutions:
+    - 1920x1080
+    - 2560x1440
+    - 3840x2160
+    - Custom resolutions
+  features:
+    - Offline gameplay
+    - Controller customization
+    - Graphics optimization
+    - Performance tuning
+    - Training mode access
+    - Environment exploration
+
+# Documentation categories
+docs_categories:
+  setup:
+    name: "Setup & Installation"
+    icon: "🛠️"
+    order: 1
+  gaming:
+    name: "Gaming Features"
+    icon: "🎮"
+    order: 2
+  advanced:
+    name: "Advanced Configuration"
+    icon: "⚙️"
+    order: 3
+  troubleshooting:
+    name: "Troubleshooting"
+    icon: "🔧"
+    order: 4
+  community:
+    name: "Community"
+    icon: "👥"
+    order: 5 
